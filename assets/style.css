@@ -1,0 +1,214 @@
+/* all */
+* {
+  margin: 0;
+  padding: 0;
+  color: #283A3B;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: whitesmoke;
+}
+
+/* go up button */
+#go-up-button {
+  font-family: 'Architects Daughter', cursive;
+  position: fixed;
+  padding: 20px;
+  bottom: 20px;
+  right: 10px;
+  display: block;
+  color: #B6CFD0;
+  text-decoration: none;
+  background-color: #283A3B88;
+  border: #283A3B solid 2px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* navbar */
+nav {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: #7BAEB1;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #B6CFD0 25%, #7EB1B4 100%);
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+#nav-home {
+  margin-left: 20px;
+}
+#nav-right {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+  overflow-x: auto;
+}
+.nav-button a{
+  display: block;
+  text-align: center;
+  padding: 18px 13px;
+  text-decoration: none;
+}
+.nav-button a:hover{
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* background */
+.cont-trans-1 {
+  background: linear-gradient(180deg, rgba(123, 174, 177, 0.5) 0%, #7BAEB1 100%);
+}
+.cont-trans-2 {
+  background: linear-gradient(180deg, #7BAEB1 0%, #283A3B 100%);
+}
+.cont {
+  background: #7BAEB1;
+}
+
+/* home */
+#home {
+  background-image: url("../image/homeBackground3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* section */
+section {
+  max-width: 735px;
+  height: 100vh;
+  padding-top: 70px;
+  padding: 70px 35px 0 35px;  
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#home section {
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 15% 20% 20% 20% auto;
+}
+
+/* title */
+h1 {
+  font-size: 48px;
+  font-family: 'Permanent Marker', 'Gamja Flower', 'Klee One', cursive;
+  grid-column: 2/5;
+  grid-row: 2;
+  color: rgb(123, 174, 177);
+  text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+#animation-text::before {
+  color: rgb(123, 174, 177);
+  content: "";
+  animation: hello 20s infinite;
+  -webkit-animation: hello 20s infinite;
+}
+@keyframes hello {
+  0% {content: "Hello,";}
+  20% {content: "Halo semua,";}
+  40% {content: "ꦱꦸꦒꦼꦁ ꦫꦮꦸꦃ";}
+  60% {content: "こんにちは,";}
+  80% {content: "안녕하세요,";}
+  100% {content: "Hello,";}
+}
+@-webkit-keyframes hello {
+  0% {content: "Hello,";}
+  20% {content: "Halo semua,";}
+  40% {content: "ꦱꦸꦒꦼꦁ ꦫꦮꦸꦃ";}
+  60% {content: "こんにちは,";}
+  80% {content: "안녕하세요,";}
+  100% {content: "Hello,";}
+}
+h2 {
+  font-size: 36px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  grid-column: 1/span3;
+}
+h3 {
+  font-size: 27px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* text */
+p {
+  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 500;
+}
+#home p {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  font-size: 24px;
+  color: rgb(123, 174, 177);
+  text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* grid */
+#about p, img {
+  padding: 0 10px;
+}
+#portofolio div, #blog div, #team div {
+  grid-row: 2/6;
+  margin: 0 5px;
+  background-color: #283a3b22;
+  border-radius: 20px;
+}
+#portofolio div:hover, #blog div:hover, #team div:hover {
+  background-color: #283a3b88;
+}
+#portofolio a, #blog a, #team a {
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+#contact p{
+  grid-column: 1/4;
+  text-align: center;
+}
+
+/* image size */
+#about div {
+  display: flex;
+  width: 100%;
+  height: 180%;
+}
+#profile-photo {
+  padding: 0;
+  margin: auto;
+  width: auto;
+  height: 100%;
+  border: #283A3B solid 2px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+#portofolio img, #blog img, #team img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 176px;
+  border: #283A3B solid 2px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* protect image */
+img {
+  pointer-events: none;
+}
